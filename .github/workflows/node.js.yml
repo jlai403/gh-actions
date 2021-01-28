@@ -75,6 +75,4 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags:
-            - jlai/gh-actions:release
-            - jlai/gh-actions:${{ env.RELEASE_VERSION }}
+          tags: jlai/gh-actions:release,jlai/gh-actions:${{ env.RELEASE_VERSION }}
